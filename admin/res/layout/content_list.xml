@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:paddingBottom="24dp">
+
+    <TextView
+            android:text="이름"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_name" android:textSize="24sp"
+            android:textColor="@android:color/black" android:textStyle="bold"
+            android:layout_marginTop="40dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="40dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp"/>
+    <TextView
+            android:text="남은 개수/학번"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_content" android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/text_name"
+            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="45dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

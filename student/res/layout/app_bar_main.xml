@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Navigation 과 상호작용하기 위해 CoordinatorLayout 사용 -->
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list_rent.MainActivity">
+
+    <!-- AppBar 로 사용할 툴바와 탭레이아웃을 포함하기 위한 AppBar 레이아웃 -->
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- ActionBar 를 대체할 Toolbar 선언 -->
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <!--
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+        </android.support.design.widget.TabLayout>
+        -->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- 액션바, 탭 영역을 제외한 메인액티비티의 실제 컨텐츠 레이아웃을 include -->
+    <include layout="@layout/content_main"/>
+
+</android.support.design.widget.CoordinatorLayout>
